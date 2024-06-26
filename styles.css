@@ -824,3 +824,65 @@ body {
     width: 90vw;
   }
 }
+
+/* Customer Gallery styles */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+.gallery .headline {
+  font-size: 2rem;
+  line-height: 2.625rem;
+  text-align: center;
+  margin-inline: auto;
+  color: var(--clr-neutral-200);
+  max-width: 35ch;
+  margin-top: 5.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.gallery-images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-images-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .main-button {
+  padding-inline: 2.271rem;
+  margin-bottom: 6.313rem;
+}
+
+@media (max-width: 800px) {
+  .gallery .headline {
+    font-size: 1.75rem;
+    margin-top: 4rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .gallery .main-button {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery .headline {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .gallery .main-button {
+    margin-bottom: 4rem;
+  }
+}
