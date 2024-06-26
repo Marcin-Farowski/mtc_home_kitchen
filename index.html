@@ -85,13 +85,13 @@
     </header>
     <section class="hero">
       <div class="hero-content">
-        <h2 class="subheader">
-          DESIGN AND ORDER YOUR NEW KITCHEN ONLINE TODAY
-        </h2>
-        <h1>Bespoke & made to measure<br />handmade kitchen design</h1>
-        <button class="main-button">ORDER NOW</button>
+        <h2 class="title">DESIGN AND ORDER YOUR NEW KITCHEN ONLINE TODAY</h2>
+        <h1 class="headline">
+          Bespoke & made to measure<br />handmade kitchen design
+        </h1>
+        <a href="#" class="main-button">ORDER NOW</a>
       </div>
-      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide" id="splide-hero" role="group" aria-label="Slider">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -138,20 +138,65 @@
         />
       </picture>
       <div class="about-us-content">
-        <h3 class="subheader">QUALITY CRAFTMANSHIP FROM BUILD TO DELIVERY</h3>
-        <h2>Discover the beauty of a handmade kitchen</h2>
+        <h3 class="title">QUALITY CRAFTMANSHIP FROM BUILD TO DELIVERY</h3>
+        <h2 class="headline">Discover the beauty of a handmade kitchen</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget
           est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu,
           feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna
           eu pharetra tincidunt, mauris purus ultrices.
         </p>
-        <button class="main-button">ABOUT US</button>
+        <a href="#" class="main-button">ABOUT US</a>
       </div>
+    </section>
+    <section class="customer-testimonial">
+      <h3 class="title">WHAT OUR CUSTOMERS SAY</h3>
+      <h2 class="headline">
+        Over 35 years experience designing handmade kitchens
+      </h2>
+      <div
+        class="splide"
+        id="splide-testimonial"
+        role="group"
+        aria-label="Slider"
+      >
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <img src="images/chevron-prev.png" alt="Slider prev button image" />
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <img src="images/chevron-next.png" alt="Slider next button image" />
+          </button>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <p class="testimonial">
+                Since my first contact I have received a very high level of
+                customer service and advice with my kitchen plans. Ben responded
+                very quickly to all of my emails and delivery of the kitchen was
+                as planned.
+              </p>
+              <p class="author">Jane, Dundee</p>
+            </li>
+            <li class="splide__slide">
+              <p class="testimonial">
+                We are extremely pleased with the craftsmanship and quality of
+                our new kitchen. The team was professional, courteous, and
+                attentive to all our needs. They made the entire process
+                seamless and stress-free.
+              </p>
+              <p class="author">John, Glasgow</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#" class="main-button">FREQUENTLY ASKED QUESTIONS</a>
     </section>
     <script src="splide-4.1.3/dist/js/splide.min.js"></script>
     <script>
-      new Splide(".splide").mount();
+      new Splide("#splide-hero").mount();
+      new Splide("#splide-testimonial").mount();
     </script>
     <script src="script.js"></script>
   </body>
