@@ -886,3 +886,121 @@ body {
     margin-bottom: 4rem;
   }
 }
+
+/* Footer styles */
+
+footer {
+  position: relative;
+  background-image: url("images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer .container {
+  width: 80%;
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 3.75rem;
+}
+
+footer .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+footer hr {
+  width: 100%;
+  border: 0.5px solid var(--clr-neutral-900);
+  opacity: 0.2;
+}
+
+.footer-logo {
+  padding-inline: 1rem;
+}
+
+footer .links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 3rem 1rem;
+  width: 67%;
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+}
+
+footer .links-headline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer li {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-regular);
+  font-size: 0.8125rem;
+  opacity: 0.8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+footer li:hover {
+  opacity: 1;
+}
+
+footer .social ul {
+  display: flex;
+  gap: 0.9375rem;
+}
+
+footer .social li {
+  opacity: 1;
+}
+
+footer .copyright {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-regular);
+  font-size: 0.8125rem;
+  opacity: 0.5;
+  line-height: 1.625rem;
+  text-align: center;
+  margin-bottom: 3.25rem;
+}
+
+@media (max-width: 700px) {
+  footer .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .social ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .links-container {
+    grid-gap: 2.5rem 0.75rem;
+  }
+
+  footer .links-headline {
+    font-size: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  footer li {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-bottom: 0.675rem;
+  }
+
+  footer .copyright {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+  }
+}
